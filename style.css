@@ -1,0 +1,41 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    display: grid;
+    justify-content: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 5rem);
+    grid-template-rows: repeat(3, 5rem);
+    gap: .8rem;
+    margin-top: 4.9rem;
+}
+
+main button {
+    outline: .8rem solid salmon;
+    text-align: center;
+    font-size: 1.9rem;
+    background-color: brown;
+    color: white;
+}
+
+main button:disabled {
+    opacity: 1;
+}
+
+.status {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
